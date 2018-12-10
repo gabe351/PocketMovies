@@ -1,5 +1,5 @@
 # PocketMovies
-This is an iOS study project based on The MovieDB API 
+This is an iOS study project based on [The MovieDB API](https://www.themoviedb.org/)
 
 ![Swift Version](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat-square)
 
