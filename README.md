@@ -1,7 +1,7 @@
 # PocketMovies
 This is an iOS study project based on The MovieDB API 
 
-![Swift Version](https://img.shields.io/badge/swift-4.1-orange.svg?style=flat-square)
+![Swift Version](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat-square)
 
 ### Requirements
 
