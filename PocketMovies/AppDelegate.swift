@@ -17,12 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
+                        
+        let tabBar = BaseTabBarController()
         
-        guard let releasesViewController: ReleasesViewController = ViewUtils.loadNibNamed(ReleasesViewController.nibName, owner: nil) else {
-            return true
-        }
-        
-        window?.rootViewController = releasesViewController
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
         return true
     }

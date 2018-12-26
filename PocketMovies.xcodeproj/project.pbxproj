@@ -14,6 +14,11 @@
 		0495732121D3BDAA00F61B59 /* LoadReleases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732021D3BDAA00F61B59 /* LoadReleases.swift */; };
 		0495732321D3BE6C00F61B59 /* ReleasesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732221D3BE6C00F61B59 /* ReleasesPresenter.swift */; };
 		0495732521D3BE7500F61B59 /* ReleasesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732421D3BE7500F61B59 /* ReleasesContract.swift */; };
+		0495732821D3C11500F61B59 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732721D3C11500F61B59 /* BaseTabBarController.swift */; };
+		0495732B21D3C15000F61B59 /* SearchMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732A21D3C15000F61B59 /* SearchMoviesViewController.swift */; };
+		0495732E21D3C19900F61B59 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732D21D3C19900F61B59 /* FavoriteViewController.swift */; };
+		0495733021D3C1A300F61B59 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495732F21D3C1A300F61B59 /* FavoriteViewController.xib */; };
+		0495733221D3C21600F61B59 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495733121D3C21600F61B59 /* SearchViewController.xib */; };
 		0496582521BEFC7C00CD0146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496582421BEFC7C00CD0146 /* AppDelegate.swift */; };
 		0496582721BEFC7C00CD0146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496582621BEFC7C00CD0146 /* ViewController.swift */; };
 		0496582C21BEFC7D00CD0146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0496582B21BEFC7D00CD0146 /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 		0495732021D3BDAA00F61B59 /* LoadReleases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadReleases.swift; sourceTree = "<group>"; };
 		0495732221D3BE6C00F61B59 /* ReleasesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesPresenter.swift; sourceTree = "<group>"; };
 		0495732421D3BE7500F61B59 /* ReleasesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesContract.swift; sourceTree = "<group>"; };
+		0495732721D3C11500F61B59 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		0495732A21D3C15000F61B59 /* SearchMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMoviesViewController.swift; sourceTree = "<group>"; };
+		0495732D21D3C19900F61B59 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		0495732F21D3C1A300F61B59 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		0495733121D3C21600F61B59 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		0496582121BEFC7C00CD0146 /* PocketMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0496582421BEFC7C00CD0146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0496582621BEFC7C00CD0146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,12 +108,15 @@
 		0495731521D3B84A00F61B59 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0495731621D3B85300F61B59 /* Home */,
+				0495732621D3C10600F61B59 /* TabBar */,
+				0495731621D3B85300F61B59 /* Releases */,
+				0495732921D3C14100F61B59 /* Search */,
+				0495732C21D3C15500F61B59 /* Favorite */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		0495731621D3B85300F61B59 /* Home */ = {
+		0495731621D3B85300F61B59 /* Releases */ = {
 			isa = PBXGroup;
 			children = (
 				0495731F21D3BD9500F61B59 /* UseCase */,
@@ -112,7 +125,7 @@
 				0495732221D3BE6C00F61B59 /* ReleasesPresenter.swift */,
 				0495732421D3BE7500F61B59 /* ReleasesContract.swift */,
 			);
-			path = Home;
+			path = Releases;
 			sourceTree = "<group>";
 		};
 		0495731D21D3BD7E00F61B59 /* Model */ = {
@@ -135,6 +148,32 @@
 				0495732021D3BDAA00F61B59 /* LoadReleases.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		0495732621D3C10600F61B59 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0495732721D3C11500F61B59 /* BaseTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0495732921D3C14100F61B59 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0495732A21D3C15000F61B59 /* SearchMoviesViewController.swift */,
+				0495733121D3C21600F61B59 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0495732C21D3C15500F61B59 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				0495732D21D3C19900F61B59 /* FavoriteViewController.swift */,
+				0495732F21D3C1A300F61B59 /* FavoriteViewController.xib */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 		0496581821BEFC7C00CD0146 = {
@@ -289,6 +328,8 @@
 			files = (
 				0496582F21BEFC7D00CD0146 /* LaunchScreen.storyboard in Resources */,
 				0496582C21BEFC7D00CD0146 /* Assets.xcassets in Resources */,
+				0495733021D3C1A300F61B59 /* FavoriteViewController.xib in Resources */,
+				0495733221D3C21600F61B59 /* SearchViewController.xib in Resources */,
 				0495731A21D3B86300F61B59 /* ReleasesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,11 +434,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0495732121D3BDAA00F61B59 /* LoadReleases.swift in Sources */,
+				0495732821D3C11500F61B59 /* BaseTabBarController.swift in Sources */,
 				0496582721BEFC7C00CD0146 /* ViewController.swift in Sources */,
 				0495732321D3BE6C00F61B59 /* ReleasesPresenter.swift in Sources */,
+				0495732E21D3C19900F61B59 /* FavoriteViewController.swift in Sources */,
 				0495732521D3BE7500F61B59 /* ReleasesContract.swift in Sources */,
 				0496582521BEFC7C00CD0146 /* AppDelegate.swift in Sources */,
 				0495731421D3B81600F61B59 /* ViewUtils.swift in Sources */,
+				0495732B21D3C15000F61B59 /* SearchMoviesViewController.swift in Sources */,
 				0495731821D3B85A00F61B59 /* ReleasesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
