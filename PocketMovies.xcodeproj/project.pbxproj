@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0495731421D3B81600F61B59 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495731321D3B81600F61B59 /* ViewUtils.swift */; };
+		0495731821D3B85A00F61B59 /* ReleasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495731721D3B85A00F61B59 /* ReleasesViewController.swift */; };
+		0495731A21D3B86300F61B59 /* ReleasesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495731921D3B86300F61B59 /* ReleasesViewController.xib */; };
+		0495731C21D3B95900F61B59 /* SampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495731B21D3B95900F61B59 /* SampleTest.swift */; };
+		0495732121D3BDAA00F61B59 /* LoadReleases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732021D3BDAA00F61B59 /* LoadReleases.swift */; };
+		0495732321D3BE6C00F61B59 /* ReleasesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732221D3BE6C00F61B59 /* ReleasesPresenter.swift */; };
+		0495732521D3BE7500F61B59 /* ReleasesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495732421D3BE7500F61B59 /* ReleasesContract.swift */; };
 		0496582521BEFC7C00CD0146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496582421BEFC7C00CD0146 /* AppDelegate.swift */; };
 		0496582721BEFC7C00CD0146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496582621BEFC7C00CD0146 /* ViewController.swift */; };
-		0496582A21BEFC7C00CD0146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0496582821BEFC7C00CD0146 /* Main.storyboard */; };
 		0496582C21BEFC7D00CD0146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0496582B21BEFC7D00CD0146 /* Assets.xcassets */; };
 		0496582F21BEFC7D00CD0146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0496582D21BEFC7D00CD0146 /* LaunchScreen.storyboard */; };
 		0496583A21BEFC7D00CD0146 /* PocketMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496583921BEFC7D00CD0146 /* PocketMoviesTests.swift */; };
@@ -28,10 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0495731321D3B81600F61B59 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		0495731721D3B85A00F61B59 /* ReleasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesViewController.swift; sourceTree = "<group>"; };
+		0495731921D3B86300F61B59 /* ReleasesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReleasesViewController.xib; sourceTree = "<group>"; };
+		0495731B21D3B95900F61B59 /* SampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTest.swift; sourceTree = "<group>"; };
+		0495732021D3BDAA00F61B59 /* LoadReleases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadReleases.swift; sourceTree = "<group>"; };
+		0495732221D3BE6C00F61B59 /* ReleasesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesPresenter.swift; sourceTree = "<group>"; };
+		0495732421D3BE7500F61B59 /* ReleasesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesContract.swift; sourceTree = "<group>"; };
 		0496582121BEFC7C00CD0146 /* PocketMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0496582421BEFC7C00CD0146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0496582621BEFC7C00CD0146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0496582921BEFC7C00CD0146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0496582B21BEFC7D00CD0146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0496582E21BEFC7D00CD0146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0496583021BEFC7D00CD0146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +78,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0495731121D3B80400F61B59 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0495731521D3B84A00F61B59 /* Modules */,
+				0495731221D3B80D00F61B59 /* Utils */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0495731221D3B80D00F61B59 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0495731321D3B81600F61B59 /* ViewUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0495731521D3B84A00F61B59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0495731621D3B85300F61B59 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0495731621D3B85300F61B59 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0495731F21D3BD9500F61B59 /* UseCase */,
+				0495731721D3B85A00F61B59 /* ReleasesViewController.swift */,
+				0495731921D3B86300F61B59 /* ReleasesViewController.xib */,
+				0495732221D3BE6C00F61B59 /* ReleasesPresenter.swift */,
+				0495732421D3BE7500F61B59 /* ReleasesContract.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0495731D21D3BD7E00F61B59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0495731E21D3BD8800F61B59 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0495731F21D3BD9500F61B59 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				0495732021D3BDAA00F61B59 /* LoadReleases.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		0496581821BEFC7C00CD0146 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +160,11 @@
 		0496582321BEFC7C00CD0146 /* PocketMovies */ = {
 			isa = PBXGroup;
 			children = (
+				0495731121D3B80400F61B59 /* Application */,
+				0495731D21D3BD7E00F61B59 /* Model */,
+				0495731E21D3BD8800F61B59 /* Infrastructure */,
 				0496582421BEFC7C00CD0146 /* AppDelegate.swift */,
 				0496582621BEFC7C00CD0146 /* ViewController.swift */,
-				0496582821BEFC7C00CD0146 /* Main.storyboard */,
 				0496582B21BEFC7D00CD0146 /* Assets.xcassets */,
 				0496582D21BEFC7D00CD0146 /* LaunchScreen.storyboard */,
 				0496583021BEFC7D00CD0146 /* Info.plist */,
@@ -104,6 +177,7 @@
 			children = (
 				0496583921BEFC7D00CD0146 /* PocketMoviesTests.swift */,
 				0496583B21BEFC7D00CD0146 /* Info.plist */,
+				0495731B21D3B95900F61B59 /* SampleTest.swift */,
 			);
 			path = PocketMoviesTests;
 			sourceTree = "<group>";
@@ -140,7 +214,6 @@
 				0496581E21BEFC7C00CD0146 /* Frameworks */,
 				0496581F21BEFC7C00CD0146 /* Resources */,
 				2D209C262D6CE8599E388F2A /* [CP] Embed Pods Frameworks */,
-				1813FFD2BB0DCFA5DE06B220 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,7 +233,6 @@
 				0496583221BEFC7D00CD0146 /* Frameworks */,
 				0496583321BEFC7D00CD0146 /* Resources */,
 				97DBA18A08819E947437DC53 /* [CP] Embed Pods Frameworks */,
-				AD222D27F3F4AF6905B98FE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,7 +289,7 @@
 			files = (
 				0496582F21BEFC7D00CD0146 /* LaunchScreen.storyboard in Resources */,
 				0496582C21BEFC7D00CD0146 /* Assets.xcassets in Resources */,
-				0496582A21BEFC7C00CD0146 /* Main.storyboard in Resources */,
+				0495731A21D3B86300F61B59 /* ReleasesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,30 +303,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1813FFD2BB0DCFA5DE06B220 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketMovies/Pods-PocketMovies-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D209C262D6CE8599E388F2A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PocketMovies/Pods-PocketMovies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -267,13 +335,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketMovies-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5461C1CBE55AED8BB211933D /* [CP] Check Pods Manifest.lock */ = {
@@ -282,13 +353,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketMoviesTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97DBA18A08819E947437DC53 /* [CP] Embed Pods Frameworks */ = {
@@ -297,28 +371,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PocketMoviesTests/Pods-PocketMoviesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketMoviesTests/Pods-PocketMoviesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD222D27F3F4AF6905B98FE6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketMoviesTests/Pods-PocketMoviesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -328,8 +392,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0495732121D3BDAA00F61B59 /* LoadReleases.swift in Sources */,
 				0496582721BEFC7C00CD0146 /* ViewController.swift in Sources */,
+				0495732321D3BE6C00F61B59 /* ReleasesPresenter.swift in Sources */,
+				0495732521D3BE7500F61B59 /* ReleasesContract.swift in Sources */,
 				0496582521BEFC7C00CD0146 /* AppDelegate.swift in Sources */,
+				0495731421D3B81600F61B59 /* ViewUtils.swift in Sources */,
+				0495731821D3B85A00F61B59 /* ReleasesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0496583A21BEFC7D00CD0146 /* PocketMoviesTests.swift in Sources */,
+				0495731C21D3B95900F61B59 /* SampleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,14 +422,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0496582821BEFC7C00CD0146 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0496582921BEFC7C00CD0146 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0496582D21BEFC7D00CD0146 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -495,7 +557,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = PocketMovies/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.PocketMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -511,7 +576,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = PocketMovies/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.PocketMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -528,7 +596,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = PocketMoviesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.PocketMoviesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -546,7 +618,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = PocketMoviesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.PocketMoviesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
