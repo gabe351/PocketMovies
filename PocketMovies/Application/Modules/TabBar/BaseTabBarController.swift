@@ -13,7 +13,6 @@ class BaseTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         //        tabBar.unselectedItemTintColor = Theme.TabBarUnselectedItemColor
         //        tabBar.tintColor               = Theme.TabBarSelectedItemColor
         //        tabBar.barTintColor            = Theme.TabBarColor
@@ -28,13 +27,14 @@ class BaseTabBarController: UITabBarController {
         if let releases = releasesViewController, let search = searchViewController, let favorite = favoriteViewController {
             releases.tabBarItem.image = UIImage()
             releases.title            = "New Releases"
-            search.tabBarItem.image   = UIImage()
+            let imageView = UIImageView(image: UIImage(named: "icon-search"))            
+            imageView.adjustsImageSizeForAccessibilityContentSizeCategory = true
+            search.tabBarItem.image   = imageView.image
             search.title              = "Search Movie"
             favorite.tabBarItem.image = UIImage()
             favorite.title            = "Favorite Movies"
             viewControllers = [releases, search, favorite]
         }
-
         
 //        if let dashboardViewController = storyboard.instantiateViewController(withIdentifier: "ConstructionSiteDashboardViewIdentifier") as? DashboardViewController {
 //            let stepManagerViewController              = StepManagerViewController()

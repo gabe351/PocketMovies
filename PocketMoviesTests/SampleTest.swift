@@ -18,8 +18,7 @@ struct SampleStructForTest {
 class SampleStructTests: XCTestCase {
     
     let sample = SampleStructForTest(isTrue: false, title: "myTitle", count: 132)
-    
-    
+        
     func checkIsTrue() {
         XCTAssertFalse(sample.isTrue)
     }
